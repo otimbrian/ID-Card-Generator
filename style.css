@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    font: 20px Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h3 {
+    color: #159;
+
+}
+
+.outer_container {
+    margin-left: 10%;
+}
+
+.input_form,
+.preview_container {
+    width: 40%;
+    float: left;
+}
+
+.preview_container {
+    /* margin-top: 3em; */
+    color: #000;
+}
+
+input{
+    display: table;
+    margin-bottom: 1em;
+    width: 60%;
+    font-size: 16px;
+    border: 2px solid #159;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#file{
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+.upload, button{
+    color: #fff;
+    background: #159;
+    padding: 5px;
+    border: 2px solid #159;
+}
