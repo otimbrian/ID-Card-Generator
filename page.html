@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+
+    <div class="outer_container">
+        <div class="input_form">
+            <form action="">
+                <h3>Form</h3>
+
+                <label for="">Name</label>
+                <input type="text" name="" id="" placeholder="Full Name">
+
+                <label for="">D.O.B</label>
+                <input type="date" name="" id="">
+
+                <label for="">Faculty</label>
+                <input type="text" name="" id="" placeholder="Faculty">
+
+                <label for="">Year Of Study</label>
+                <input type="number" name="" id="" placeholder="Year of Study">
+
+                <label for="">Image</label>
+                <br>
+                <span>No obscene imagery is acceptable as per the school policy.</span>
+                <input type="file" name="" id="file" accept="image/*" onchange="loadImage(event)">
+            </form>
+
+            <button type="submit">Preview</button>
+        </div>
+        <div class="preview_container">
+            <div class="card">
+                <header id="head">
+                    <div class="school">
+                        <h4>School Full Name Here</h4>
+                        <span>Level of Study</span>
+                    </div>
+                    <img src="school-logo.jpg" alt="Shool logo">
+                </header>
+                <div class="content">
+                    <img src="" alt="Student Image" id="studentImage">
+                    <ul>
+                        <li id="name"></li>
+                        <li id="birth_date"></li>
+                        <li id="year_of-sturdy"></li>
+                        <li id=""></li>
+                    </ul>
+                    <button id="down">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
