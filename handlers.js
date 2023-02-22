@@ -1,7 +1,5 @@
 
-
-
-
+const canvas = document.getElementById("form_result")
 const previewButton = document.getElementById("preview_button")
 
 previewButton.addEventListener("click", () => {
@@ -22,8 +20,27 @@ previewButton.addEventListener("click", () => {
     faculty.innerHTML = inputFaculty
 })
 
-function loadStudentImage(event){
-    
+function loadStudentImage(event) {
+    const imageDisplay = document.getElementById("studentImage")
+    imageDisplay.src = URL.createObjectURL(event.target.files[0])
 }
 
+const download = document.getElementById("download")
+download.addEventListener(
+    "click", () => {
+        if (window.navigator.msSaveBlob) {
+            console.log("Saving....")
+            window.navigator.msSaveBlob(canvas.msSaveBlob(), "Id-Card.png")
+        } else {
+            console.log("not saving....")
+            const message = document.createElement('message')
+
+            document.body.appendChild(message)
+            message.href = canvas.toDataURL()
+
+            message.click()
+            document.body.removeChild(message)
+        }
+    }
+)
 
