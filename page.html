@@ -32,13 +32,13 @@
                 <label for="file" class="upload">Upload Image</label>
                 <br>
                 <span>No obscene imagery is acceptable as per the school policy.</span>
-                <input type="file" name="" id="file" accept="image/*" onchange="loadImage(event)">
+                <input type="file" name="" id="file" accept="image/*" onchange="loadStudentImage(event)">
             </form>
 
             <button type="submit" id="preview_button">Preview</button>
         </div>
         <div class="preview_container">
-            <!-- <canvas id="form_result" class="identity_card"> -->
+            <canvas id="form_result" class="identity_card">
                 <header id="head">
                     <div class="school">
                         <h4>School Full Name Here</h4>
@@ -56,7 +56,7 @@
                     </ul>
                     
                 </div>
-            <!-- </canvas> -->
+            </canvas>
             <button id="download">Download</button>
         </div>
     </div>
