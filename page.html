@@ -18,47 +18,50 @@
                 <h3>Form</h3>
 
                 <label for="">Name</label>
-                <input type="text" name="" id="" placeholder="Full Name">
+                <input type="text" name="" id="iputName" placeholder="Full Name">
 
                 <label for="">D.O.B</label>
-                <input type="date" name="" id="">
+                <input type="date" name="" id="inputDOB">
 
                 <label for="">Faculty</label>
-                <input type="text" name="" id="" placeholder="Faculty">
+                <input type="text" name="" id="inputFaculty" placeholder="Faculty">
 
                 <label for="">Year Of Study</label>
-                <input type="number" name="" id="" placeholder="Year of Study">
+                <input type="number" name="" id="inputYOS" placeholder="Year of Study">
 
-                <label for="">Image</label>
+                <label for="file" class="upload">Upload Image</label>
                 <br>
                 <span>No obscene imagery is acceptable as per the school policy.</span>
                 <input type="file" name="" id="file" accept="image/*" onchange="loadImage(event)">
             </form>
 
-            <button type="submit">Preview</button>
+            <button type="submit" id="preview_button">Preview</button>
         </div>
         <div class="preview_container">
-            <div class="card">
+            <!-- <canvas id="form_result" class="identity_card"> -->
                 <header id="head">
                     <div class="school">
                         <h4>School Full Name Here</h4>
                         <span>Level of Study</span>
                     </div>
-                    <img src="school-logo.jpg" alt="Shool logo">
+                    <img src="school-logo.jpg" alt="shool_logo">
                 </header>
                 <div class="content">
                     <img src="" alt="Student Image" id="studentImage">
                     <ul>
                         <li id="name"></li>
                         <li id="birth_date"></li>
-                        <li id="year_of-sturdy"></li>
-                        <li id=""></li>
+                        <li id="year_of_sturdy"></li>
+                        <li id="faculty"></li>
                     </ul>
-                    <button id="down">Download</button>
+                    
                 </div>
-            </div>
+            <!-- </canvas> -->
+            <button id="download">Download</button>
         </div>
     </div>
 </body>
-
+<footer>
+    <script src="handlers.js"></script>
+</footer>
 </html>
